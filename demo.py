@@ -8,6 +8,7 @@ def fast_function():
 
 def slow_function(how_slow = 0.15):
     time_to_sleep = how_slow * 1
+    # time_to_sleep = how_slow * 0.1
     time.sleep(time_to_sleep)
     return True
 
@@ -28,5 +29,5 @@ def test_benchmark_slow(benchmark):
     assert result == True
 
 def test_benchmark_slow_input(benchmark):
-    result = benchmark(slow_function, 0.8)
+    result = benchmark(slow_function, 0.5)
     assert result == True

@@ -4,13 +4,14 @@
 `pytest-benchmark` is a pytest fixture ("add-on") for benchmarking code
 
 [pytest-benchmark documentation](https://pytest-benchmark.readthedocs.io/en/latest/index.html)
+[pytest-benchmark github](https://github.com/ionelmc/pytest-benchmark)
 
 ## Prerequisites
 Python env with `pytest` and `pytest-benchmark` installed (available via pip install)
 
 ## Quick-start
 - Clone this repo
-- Ensure env with required libraries is activates
+- Ensure env with required libraries is activated
 - In terminal, at repo root: `pytest demo.py -v`
 
 
@@ -34,7 +35,7 @@ Python env with `pytest` and `pytest-benchmark` installed (available via pip ins
 
 ## Handy tips
 - Can pass in arguments to the function under test: `result = benchmark(my_function, 1234)`
-- Can use `--benchmark-autosave` flag to save the current run to a json file
+- Can use `--benchmark-autosave` flag to save the current run to a json file (can also customize file details)
 - Can use `--benchmark-compare=0001` to compare with previously saved run (with specified run number)
 - Can use `--benchmark-columns="mean, max"` to specify which columns to show in results table
 - There's also a "pedantic" mode available, allows for even more customization:
